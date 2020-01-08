@@ -26,7 +26,7 @@
                     //デバイスにフィルターかけて、マイクロビットだけが見えるようにできる
                     //ようですが上手くいかなかったので、とりあえず全デバイスを許可
                     //{filters: [{services:[buttonUuid.toLowerCase()]}] }
-                    {filters: [{services: ['battery_service']}]}
+                    //{filters: [{services: ['battery_service']}]}
                     {acceptAllDevices:true,optionalServices:[buttonUuid.toLowerCase()]}
                 ).then(         //デバイス取得できたら
                     device => {
