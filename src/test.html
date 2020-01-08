@@ -35,6 +35,7 @@
                 ).then(         //接続できたら
                     server => {
                         console.log('Getting Service');
+                        document.getElementById('buttonA').innerHTML = ;
                         return server.getPrimaryService(buttonUuid.toLowerCase());
                     }
                 ).then(         //サービスが取得できたら
